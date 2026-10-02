@@ -107,7 +107,8 @@
     "plugin_store": "Plugin Store",
     "config_management": "Config Panel",
     "logs": "Logs Viewer",
-    "system_info": "Management Center Info"
+    "system_info": "Management Center Info",
+    "routing_limits": "Routing Limits"
   },
   "nav_groups": {
     "operate": "Operate",
@@ -127,7 +128,8 @@
     "plugin_store": "Discover & install plugins",
     "logs": "Request tracing",
     "config_management": "Gateway configuration",
-    "system_info": "Runtime & diagnostics"
+    "system_info": "Runtime & diagnostics",
+    "routing_limits": "Reset-aware order"
   },
   "dashboard": {
     "hero_verdict_good": "All systems steady",
@@ -2225,5 +2227,45 @@
     "unavailable": "Resets are currently unavailable.",
     "rate_limited": "Request rate limited.",
     "auth_error": "Authorization was refused."
+  },
+  "routing_limits": {
+    "title": "Routing limits",
+    "subtitle": "Five-hour and weekly use per account, and the order reset-aware routing drains them in.",
+    "refresh": "Refresh",
+    "loading": "Loading limits…",
+    "load_failed": "Could not load routing limits.",
+    "strategy_on": "Reset-aware routing on",
+    "strategy_off": "Reset-aware routing off (strategy: {{strategy}})",
+    "thresholds": "Thresholds: five-hour {{fiveHour}}%, weekly {{weekly}}%",
+    "polling": "Idle accounts refresh every {{minutes}} min",
+    "polling_off": "Usage polling off",
+    "empty_title": "No Codex or Claude accounts",
+    "empty_desc": "Add a Codex or Claude OAuth credential to see its limits here.",
+    "provider_codex": "Codex (ChatGPT)",
+    "provider_claude": "Claude",
+    "col_rank": "Rank",
+    "col_account": "Account",
+    "col_five_hour": "5-hour window",
+    "col_weekly": "Weekly window",
+    "col_buckets": "Model buckets",
+    "col_projected": "Unused at reset",
+    "next_up": "Next up",
+    "eligible": "Eligible",
+    "no_data": "No limit data yet",
+    "limited": "Limited: {{reasons}}",
+    "reason_five_hour": "five-hour window",
+    "reason_weekly": "weekly window",
+    "reason_bucket": "{{name}} bucket",
+    "status_cooldown": "Cooling down",
+    "status_disabled": "Disabled",
+    "status_unavailable": "Unavailable",
+    "refresh_error": "Last usage refresh failed: {{error}}",
+    "resets_in": "resets in {{duration}}",
+    "reset_ago": "reset {{duration}} ago",
+    "reset_unknown": "reset time unknown",
+    "estimated": "(estimated)",
+    "bucket_routing": "Counts for routing on {{models}}",
+    "bucket_not_routing": "Shown for reference; does not affect routing",
+    "footnote": "Unused at reset projects the current weekly burn rate to the reset time. Grayed buckets do not affect routing."
   }
 }

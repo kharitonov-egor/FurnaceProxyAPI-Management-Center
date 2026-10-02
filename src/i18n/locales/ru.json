@@ -107,7 +107,8 @@
     "plugin_store": "Магазин плагинов",
     "config_management": "Панель конфигурации",
     "logs": "Просмотр логов",
-    "system_info": "Информация системы"
+    "system_info": "Информация системы",
+    "routing_limits": "Лимиты маршрутизации"
   },
   "nav_groups": {
     "operate": "Работа",
@@ -126,7 +127,8 @@
     "plugin_store": "Поиск и установка плагинов",
     "logs": "Трассировка запросов",
     "config_management": "Базовая конфигурация шлюза",
-    "system_info": "Состояние и диагностика"
+    "system_info": "Состояние и диагностика",
+    "routing_limits": "Порядок по сбросу"
   },
   "dashboard": {
     "hero_verdict_good": "Всё стабильно",
@@ -2219,5 +2221,45 @@
     "unavailable": "Сбросы временно недоступны.",
     "rate_limited": "Слишком много запросов.",
     "auth_error": "Авторизация отклонена."
+  },
+  "routing_limits": {
+    "title": "Лимиты маршрутизации",
+    "subtitle": "Расход за 5 часов и за неделю по каждому аккаунту и порядок, в котором маршрутизация по сбросу их расходует.",
+    "refresh": "Обновить",
+    "loading": "Загрузка лимитов…",
+    "load_failed": "Не удалось загрузить лимиты маршрутизации.",
+    "strategy_on": "Маршрутизация по сбросу включена",
+    "strategy_off": "Маршрутизация по сбросу выключена (стратегия: {{strategy}})",
+    "thresholds": "Пороги: 5 часов {{fiveHour}}%, неделя {{weekly}}%",
+    "polling": "Неактивные аккаунты обновляются каждые {{minutes}} мин",
+    "polling_off": "Опрос расхода выключен",
+    "empty_title": "Нет аккаунтов Codex или Claude",
+    "empty_desc": "Добавьте OAuth-учётные данные Codex или Claude, чтобы увидеть их лимиты.",
+    "provider_codex": "Codex (ChatGPT)",
+    "provider_claude": "Claude",
+    "col_rank": "Место",
+    "col_account": "Аккаунт",
+    "col_five_hour": "Окно 5 часов",
+    "col_weekly": "Недельное окно",
+    "col_buckets": "Лимиты моделей",
+    "col_projected": "Останется к сбросу",
+    "next_up": "Следующий",
+    "eligible": "Доступен",
+    "no_data": "Данных о лимитах пока нет",
+    "limited": "Ограничен: {{reasons}}",
+    "reason_five_hour": "окно 5 часов",
+    "reason_weekly": "недельное окно",
+    "reason_bucket": "лимит {{name}}",
+    "status_cooldown": "Охлаждение",
+    "status_disabled": "Отключён",
+    "status_unavailable": "Недоступен",
+    "refresh_error": "Последнее обновление расхода не удалось: {{error}}",
+    "resets_in": "сброс через {{duration}}",
+    "reset_ago": "сброшен {{duration}} назад",
+    "reset_unknown": "время сброса неизвестно",
+    "estimated": "(оценка)",
+    "bucket_routing": "Учитывается при маршрутизации для {{models}}",
+    "bucket_not_routing": "Для справки, на маршрутизацию не влияет",
+    "footnote": "«Останется к сбросу» экстраполирует текущий недельный расход до времени сброса. Серые лимиты не влияют на маршрутизацию."
   }
 }

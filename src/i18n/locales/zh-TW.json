@@ -107,7 +107,8 @@
     "plugin_store": "插件商店",
     "config_management": "設定面板",
     "logs": "記錄檢視",
-    "system_info": "中心資訊"
+    "system_info": "中心資訊",
+    "routing_limits": "路由額度"
   },
   "nav_groups": {
     "operate": "運行",
@@ -127,7 +128,8 @@
     "plugin_store": "探索並安裝插件",
     "logs": "請求追蹤與排查",
     "config_management": "閘道基礎設定",
-    "system_info": "運行與診斷資訊"
+    "system_info": "運行與診斷資訊",
+    "routing_limits": "依重置時間排序"
   },
   "dashboard": {
     "hero_verdict_good": "運行平穩",
@@ -2249,5 +2251,45 @@
     "unavailable": "重置暫不可用。",
     "rate_limited": "請求過於頻繁。",
     "auth_error": "授權遭拒。"
+  },
+  "routing_limits": {
+    "title": "路由額度",
+    "subtitle": "每個帳號的 5 小時與每週用量，以及依重置時間優先消耗帳號的順序。",
+    "refresh": "重新整理",
+    "loading": "正在載入額度…",
+    "load_failed": "無法載入路由額度。",
+    "strategy_on": "已啟用依重置時間路由",
+    "strategy_off": "未啟用依重置時間路由（目前策略：{{strategy}}）",
+    "thresholds": "閾值：5 小時 {{fiveHour}}%，每週 {{weekly}}%",
+    "polling": "閒置帳號每 {{minutes}} 分鐘更新一次",
+    "polling_off": "已關閉用量輪詢",
+    "empty_title": "沒有 Codex 或 Claude 帳號",
+    "empty_desc": "新增 Codex 或 Claude OAuth 憑證後即可在此查看額度。",
+    "provider_codex": "Codex（ChatGPT）",
+    "provider_claude": "Claude",
+    "col_rank": "排名",
+    "col_account": "帳號",
+    "col_five_hour": "5 小時視窗",
+    "col_weekly": "每週視窗",
+    "col_buckets": "模型額度",
+    "col_projected": "重置時剩餘",
+    "next_up": "下一個",
+    "eligible": "可用",
+    "no_data": "尚無額度資料",
+    "limited": "已受限：{{reasons}}",
+    "reason_five_hour": "5 小時視窗",
+    "reason_weekly": "每週視窗",
+    "reason_bucket": "{{name}} 額度",
+    "status_cooldown": "冷卻中",
+    "status_disabled": "已停用",
+    "status_unavailable": "無法使用",
+    "refresh_error": "上次用量更新失敗：{{error}}",
+    "resets_in": "{{duration}} 後重置",
+    "reset_ago": "{{duration}} 前已重置",
+    "reset_unknown": "重置時間未知",
+    "estimated": "（估算）",
+    "bucket_routing": "對 {{models}} 的路由生效",
+    "bucket_not_routing": "僅供參考，不影響路由",
+    "footnote": "「重置時剩餘」依目前每週消耗速度推算至重置時間。灰色額度不影響路由。"
   }
 }
